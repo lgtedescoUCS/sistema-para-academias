@@ -127,8 +127,3 @@ Também pode ser importado como projeto Java no Eclipse, executando `Principal`.
 Trabalho de implementação T1 e T2 — Programação Orientada a Objetos, Universidade de Caxias do Sul (UCS).
 
 ---
-
-> ⚠️ **Confirmar e apagar este aviso:**
-> 1. `gui/` é console (modo caractere, como pede o enunciado) ou Swing? O README está escrito de forma neutra, mas vale explicitar — se for console, escreva "interface em modo caractere"; se for Swing, diga Swing, porque é um diferencial.
-> 2. Existe pacote de exceções próprias? Não apareceu no print. Se existir, acrescente uma seção. Se não existir, é o item que falta da parte 2 do trabalho.
-> 3. Confirme o package declarado em `Principal.java` — usei `gui.Principal` no comando.
