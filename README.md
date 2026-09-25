@@ -1,9 +1,12 @@
 # Sistema para Academias — ExerciteAki
 
-Sistema de gestão para academia de bairro, em Java. Controle de acesso por perfil, prescrição de treinos, acompanhamento de evolução física, relatórios de frequência e persistência em JSON.
+Sistema de gestão para academia de bairro, em Java com interface gráfica Swing.
+Controle de acesso por perfil, prescrição de treinos, acompanhamento de evolução
+física, relatórios de frequência e persistência em JSON.
 
 ![Java](https://img.shields.io/badge/Java-17-orange)
 ![Jackson](https://img.shields.io/badge/Jackson-2.17.0-green)
+![Swing](https://img.shields.io/badge/UI-Java%20Swing-blue)
 
 ---
 
@@ -81,6 +84,18 @@ O ponto não-óbvio da serialização é o grafo de objetos: `Exercicio` referen
 O relatório de frequência é o mais exigente: além de filtrar por intervalo, soma as durações de permanência a partir dos pares entrada/saída.
 
 ---
+
+## Interface
+
+Interface gráfica desktop em **Java Swing**, com layout em `java.awt` e
+tratamento de eventos via listeners. O trabalho pedia aplicação em modo
+caractere; a opção por GUI foi decisão da implementação.
+
+As telas (`gui/`) importam as entidades de `model/` e delegam a elas as regras
+de negócio — a camada de apresentação captura eventos e exibe resultados, sem
+duplicar lógica de domínio.
+
+Datas são tratadas com `java.time.LocalDate`.
 
 ## Estrutura
 
